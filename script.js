@@ -8,10 +8,27 @@
 function createSquare() {
     const square = document.createElement("div");
     square.classList.add("box");
-    document.querySelector(".rows").appendChild(square);
+    document.querySelector(".row").appendChild(square);
 }
 
 function createRow() {
     const row = document.createElement("div");
-    document.querySelector(".container").appendChild(column);
+    row.classList.add("row");
+    document.querySelector(".container").appendChild(row);
 }
+
+
+// create a row inside container
+const row = document.createElement("div");
+row.classList.add("row");
+document.querySelector(".container").appendChild(row);
+
+// create squares inside row
+for (let j = 0; j <= 5; j++) {
+    createSquare();
+}
+
+
+// loop squares
+// for (let i = 0; i <= 5; i++) {
+// }
