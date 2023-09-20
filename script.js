@@ -8,7 +8,7 @@
 function createSquare() {
     const square = document.createElement("div");
     square.classList.add("box");
-    document.querySelector(".row").appendChild(square);
+    document.querySelector(".rows").appendChild(square);
 }
 
 function createRow() {
