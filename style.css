@@ -11,16 +11,16 @@ h1 {
 }
 
 .container {
-    width: 960px;
-    height: 960px;
     border: 8px solid black;
     padding: 8px;
+    width: 700px;
+    height: 700px;
     display: flex;
 }
 
 .box {
-    flex: 1;
     background-color: aquamarine;
+    flex: 1;
 }
 
 .box:hover {
