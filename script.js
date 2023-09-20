@@ -13,3 +13,5 @@ function createSquare() {
     square.classList.add("box");
     document.querySelector(".container").appendChild(square);
 }
+
+createSquare();
