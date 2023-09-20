@@ -11,7 +11,7 @@ function createSquare() {
     document.querySelector(".container").appendChild(square);
 }
 
-function createColumn() {
+function createRow() {
     const column = document.createElement("div");
     document.querySelector(".container").appendChild(column);
 }
