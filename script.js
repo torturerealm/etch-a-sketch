@@ -12,16 +12,15 @@ function createSquare() {
 }
 
 
-const row = document.createElement("div");
-row.classList.add("row");
-document.querySelector(".container").appendChild(row);
+// loop to create each row
+for (let i = 0; i <= 5; i++) {
+    // create row
+    const row = document.createElement("div");
+    row.classList.add("row");
+    document.querySelector(".container").appendChild(row);
 
-// create squares inside row
-for (let j = 0; j <= 5; j++) {
-    createSquare();
+    // loop to create the squares inside each row
+    for (let j = 0; j <= 5; j++) {
+        createSquare();
+    }
 }
-
-
-// loop squares
-// for (let i = 0; i <= 5; i++) {
-// }
