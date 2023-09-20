@@ -11,14 +11,7 @@ function createSquare() {
     document.querySelector(".row").appendChild(square);
 }
 
-function createRow() {
-    const row = document.createElement("div");
-    row.classList.add("row");
-    document.querySelector(".container").appendChild(row);
-}
 
-
-// create a row inside container
 const row = document.createElement("div");
 row.classList.add("row");
 document.querySelector(".container").appendChild(row);
