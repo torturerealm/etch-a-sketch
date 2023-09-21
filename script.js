@@ -1,4 +1,7 @@
-
+function getNumber() {
+    const userInput = prompt("How many squares?");
+    if
+}
 
 function createSquare() {
     const square = document.createElement("div");
@@ -10,6 +13,8 @@ function createSquare() {
     });
 }
 
+const click = document.querySelector("button");
+click.addEventListener("click", getNumber());
 
 for (let i = 0; i < 5; i++) {
     const row = document.createElement("div");
