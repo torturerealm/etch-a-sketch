@@ -20,17 +20,19 @@ function createSquare() {
     });
 }
 
-
-let squareNum = 0;
-const button = document.querySelector("button");
-
-button.addEventListener("click", () => {
+function promptUser() {
     let userInput = prompt("How many squares? 1-100");
+    
     if (userInput > 0 && userInput < 100) {
         squareNum = userInput;
         createGrid();
     } else {
         alert("Invalid. Choose from 1-100.");
     }
-});
+}
+
+let squareNum = 0;
+const button = document.querySelector("button");
+button.addEventListener("click", promptUser);
+// add function to reset squareNum
 
