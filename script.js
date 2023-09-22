@@ -23,7 +23,7 @@ function createSquare() {
 function promptUser() {
     let userInput = prompt("How many squares? 1-100");
     
-    if (userInput > 0 && userInput < 100) {
+    if (userInput > 0 && userInput <= 100) {
         squareNum = userInput;
         createGrid();
     } else {
