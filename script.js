@@ -31,8 +31,13 @@ function promptUser() {
     }
 }
 
+
 let squareNum = 0;
-const button = document.querySelector("button");
-button.addEventListener("click", promptUser);
-// add function to reset squareNum
+const gridButton = document.querySelector(".grid");
+gridButton.addEventListener("click", promptUser);
+
+const resetButton = document.querySelector(".reset");
+resetButton.addEventListener("click", resetGrid);
+// function to remove existing rows & squares
+// function to reset squareNum
 
