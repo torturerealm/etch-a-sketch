@@ -23,11 +23,15 @@ function createSquare() {
 function promptUser() {
     let userInput = prompt("How many squares? 1-100");
     
-    if (userInput > 0 && userInput <= 100) {
-        squareNum = userInput;
-        createGrid();
+    if (squareNum === 0) {
+        if (userInput > 0 && userInput <= 100) {
+            squareNum = userInput;
+            createGrid();
+        } else {
+            alert("Invalid. Choose from 1-100.");
+        }
     } else {
-        alert("Invalid. Choose from 1-100.");
+        alert("Reset grid");
     }
 }
 
@@ -42,6 +46,8 @@ function resetGrid() {
     rows.forEach((row) => {
         row.remove();
     });
+
+    squareNum = 0;
 }
 
 let squareNum = 0;
