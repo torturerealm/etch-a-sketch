@@ -29,7 +29,8 @@ h1 {
 }
 
 .box {
-    border: 1px solid lightgray;
+    background-color: aqua;
+    border: 1px solid black;
     flex: 1;
 }
 
