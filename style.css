@@ -19,6 +19,10 @@ h1 {
     flex-direction: column;
 }
 
+.buttons {
+    margin-bottom: 8px;
+}
+
 .row {
     display: flex;
     flex: 1;
