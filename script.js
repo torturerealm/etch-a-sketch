@@ -31,6 +31,18 @@ function promptUser() {
     }
 }
 
+function resetGrid() {
+    const squares = document.querySelectorAll(".row");
+    const rows = document.querySelectorAll(".box");
+
+    squares.forEach((square) => {
+        square.remove();
+    });
+
+    rows.forEach((row) => {
+        row.remove();
+    });
+}
 
 let squareNum = 0;
 const gridButton = document.querySelector(".grid");
@@ -38,6 +50,4 @@ gridButton.addEventListener("click", promptUser);
 
 const resetButton = document.querySelector(".reset");
 resetButton.addEventListener("click", resetGrid);
-// function to remove existing rows & squares
-// function to reset squareNum
 
