@@ -29,7 +29,7 @@ h1 {
 }
 
 .box {
-    background-color: aquamarine;
+    border: 1px solid lightgray;
     flex: 1;
 }
 
