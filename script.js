@@ -1,3 +1,5 @@
+let squareNum = 0;
+
 function createGrid() {
     for (let i = 0; i < squareNum; i++) {
         const row = document.createElement("div");
@@ -50,10 +52,19 @@ function resetGrid() {
     squareNum = 0;
 }
 
-let squareNum = 0;
+function paintBoxes() {
+    const boxes = document.querySelectorAll(".box");
+    boxes.forEach(box => box.addEventListener("click", () => {
+        box.classList.add("painted");
+    }));
+}
+
+
 const gridButton = document.querySelector(".grid");
-gridButton.addEventListener("click", promptUser);
+gridButton.addEventListener("click", () => {
+promptUser();
+paintBoxes();
+});
 
 const resetButton = document.querySelector(".reset");
 resetButton.addEventListener("click", resetGrid);
-
